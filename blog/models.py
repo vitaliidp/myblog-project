@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Blog(models.Model):
+class Post(models.Model):
 	blog_title = models.CharField(max_length = 150)
 	blog_date = models.DateTimeField(auto_now = True)
 	blog_text = models.TextField(max_length = 10000)
